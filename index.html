@@ -1,89 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>小型组织网站</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #444;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 15px;
-            margin: 0 10px;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>张思璇 | 和光同尘</title>
+	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header>
-        <h1>小型组织网站</h1>
-    </header>
-    <nav>
-        <a href="#home">首页</a>
-        <a href="#about">关于我们</a>
-        <a href="#services">服务</a>
-        <a href="#contact">联系我们</a>
-    </nav>
-    <div class="container" id="home">
-        <h2>欢迎来到我们的组织</h2>
-        <p>这是一个小型组织的网站，致力于提供高质量的服务和活动。我们欢迎您的加入和合作！</p>
-    </div>
-    <div class="container" id="about">
-        <h2>关于我们</h2>
-        <p>我们是一个充满活力的组织，专注于……</p>
-    </div>
-    <div class="container" id="services">
-        <h2>我们的服务</h2>
-        <ul>
-            <li>服务1</li>
-            <li>服务2</li>
-            <li>服务3</li>
-        </ul>
-    </div>
-    <div class="container" id="contact">
-        <h2>联系我们</h2>
-        <p>如果您有任何问题或建议，请随时联系我们：</p>
-        <p>邮箱：[email protected]</p>
-        <p>电话：123-456-7890</p>
-    </div>
-    <div class="footer">
-        <p>&copy; 2024 小型组织网站</p>
-    </div>
+    <ul class="topnav">
+		<li><a class="active" href="#home">主页</a></li>
+		<li><a href="https://wbza.tk/">我的BLOG</a></li>
+		<li><a href="/PicWall.html">图片墙</a></li>
+		<li><a href="/music/">静态音乐播放器（搁浅）</a></li>
+		<li><a href="/music-failure/">静态音乐播放器（搁浅）</a></li>
+		<li><a href="/HappyNewYear.html">新年快乐</a></li>
+		<li><a href="/forum.html">论坛</a></li>
+		<li class="right"><a href="/about.html">历程</a></li>
+        <div id="topTitle">
+            <h1>和光同尘.</h1>
+    
+            <span class="underline"></span>
+    
+            <h2>/*这里是张思璇的个人主页*/</h2>
+        </div>
+    
+        <div id="about">
+            <h3>关于我</h3>
+    
+            <span class="underline1"></span>
+    
+            <div class="tagBox">
+                <span>学生</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>AE</span>
+            </div>
+    
+            <div class="aboutContent">
+                <p>我是张思璇</p>
+                <p>我什么都不会做</p>
+            </div>
+    
+        </div>
+        <footer class="footer">
+            <div class="waves">
+                <div class="wave" id="wave1">
+                </div>
+                <div class="wave" id="wave2">
+                </div>
+                <div class="wave" id="wave3">
+                </div>
+                <div class="wave" id="wave4">
+                </div>
+            </div>
+    
+            <ul class="social-icon">
+                <li class="social-icon__item">
+           <a class="social-icon__link" href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                </li>
+    
+                <li class="social-icon__item">
+                    <a class="social-icon__link" href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                </li>
+    
+                <li class="social-icon__item">
+                    <a class="social-icon__link" href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </li>
+    
+                <li class="social-icon__item">
+                    <a class="social-icon__link" href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          </li>
+            </ul>
+    
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="#">主站</a></li>
+                <li class="menu__item"><a class="menu__link" href="/about.html">关于</a></li>
+                <li class="menu__item"><a class="menu__link" href="https://wbza.tk/">文章</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">联系</a></li>
+            </ul>
+    
+            <p>
+                <a href="https://cheongszesuen.rth1.one/" ;target="_blank" ;>张思璇</a>|
+                <a href="https://dangerous-hhz.rth1.one/" ;target="_blank" ;font-size="17px">侯皓哲</a>
+            </p>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	</ul>
 </body>
 </html>
