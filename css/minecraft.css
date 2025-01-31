@@ -162,13 +162,18 @@ h1 {
 
 h1,h2 {
 	font-weight: 400;
-	color: #e0d3bc
+	color: #e0d3bc;
 }
 .title {
-	color: #3C8527
+	color: #3C8527;
 }
 h2 {
 	font-size: 15px
+}
+
+.note {
+	font-size: 15px;
+	color: #3C8527;
 }
 
 h2 span {
@@ -403,7 +408,6 @@ li.right {
 	position: relative;
 	justify-content: space-between;
 	width: 100%;
-	max-width: 1200px;
 	padding: 20px;
 	background-color: #fff;
 }
@@ -417,13 +421,11 @@ li.right {
 }
 
 .LeftBox {
-	position: relative;
 	width: 50%;
 	text-align: center
 }
 
 .RightBox {
-	position: relative;
 	width: 50%;
 	text-align: center
 }
@@ -434,15 +436,30 @@ li.right {
 	vertical-align: middle
 }
 .player{
-	width: 100%;
-	height: auto;
-	padding: 5px;
+	display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 20px; 
+    width: 100%; 
+    height: auto; 
+    border: 2px solid #6b6562; 
 	background-color: #262423;
-	border: 1px #6B6562;
 }
 
 .playerfaces{
-	width: 64px;
-	height: 64px;
-	float: left;
+	width: 50px; 
+    height: 50px; 
+    object-fit: cover; 
+}
+.nickname {
+	font-size: 16px; 
+	line-height: 1.2; 
+	white-space: nowrap; 
+	color: #fff;
+	text-align: center;
+}
+@media (max-width: 600px) {
+    .player {
+        flex: 1 1 100%; 
+    }
 }
