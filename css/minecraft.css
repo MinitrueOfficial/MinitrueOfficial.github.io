@@ -39,6 +39,7 @@ body {
     user-select: none;
 }
 #bodyBox {
+	font-family: "Minecraft_Sans", sans-serif;
     background-size: auto;
     background-position: center;
     background-attachment: fixed;
@@ -50,6 +51,7 @@ body {
     height: 100%；
 }
 #bgBox{
+	font-family: "Minecraft_Sans", sans-serif;
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
@@ -98,6 +100,7 @@ height:auto;
 } 
 
 #topTitle {
+	font-family: "Minecraft_Sans", sans-serif;
     position: absolute;
     top: 30%;
     width: 100%;
@@ -105,10 +108,12 @@ height:auto;
 }
 
 #about,#log {
+	font-family: "Minecraft_Sans", sans-serif;
     background-color: white;
 }
 
 .tagBox {
+	font-family: "Minecraft_Sans", sans-serif;
     position: relative;
     margin-top: 60px;
     width: 100%;
@@ -116,6 +121,7 @@ height:auto;
 }
 
 .tagBox span {
+	font-family: "Minecraft_Sans", sans-serif;
     margin: 0 3px;
     padding: 8px 15px;
     border-radius: 10px;
@@ -125,6 +131,7 @@ height:auto;
 }
 
 .tagBox span:hover {
+	font-family: "Minecraft_Sans", sans-serif;
     background-color: white;
     color: black;
     -webkit-box-shadow: rgba(0,0,0,.1) 0 5px 10px;
@@ -133,6 +140,7 @@ height:auto;
 }
 
 .aboutContent {
+	font-family: "Minecraft_Sans", sans-serif;
     position: relative;
     margin-top: 35px;
     width: 100%;
@@ -141,6 +149,7 @@ height:auto;
 }
 
 .underline {
+	font-family: "Minecraft_Sans", sans-serif;
     position: absolute;
     left: calc(50% - 35px);
     margin-top: -30px;
@@ -151,6 +160,7 @@ height:auto;
 }
 
 .underline1 {
+	font-family: "Minecraft_Sans", sans-serif;
     position: absolute;
     left: calc(50% - 25px);
     margin-top: -10px;
@@ -162,38 +172,39 @@ height:auto;
 }
 
 h1 {
+	font-family: "Minecraft_Sans", sans-serif;
     font-weight: 400;
-    font-family: "HarmonyOS_Sans", sans-serif;
     font-size: 80px;
     color: #e0d3bc
 }
 
 h2 {
+	font-family: "Minecraft_Sans", sans-serif;
     font-weight: 400;
-    font-family: "HarmonyOS_Sans", sans-serif;
     font-size: 15px;
     color: #e0d3bc
 }
 
 h2 span {
+	font-family: "Minecraft_Sans", sans-serif;
     color: rgba(255,255,255,.6)
 }
 
 h3 {
-    font-family: "HarmonyOS_Sans", sans-serif;
+    font-family: "Minecraft_Sans", sans-serif;
     font-size: 30px;
     color: var(--txt-b-pure);
     transition: .25s
 }
 
 h4 {
-    font-family: "HarmonyOS_Sans", sans-serif;
+    font-family: "Minecraft_Sans", sans-serif;
     color: var(--txt-b-pure);
     font-size: 28px
 }
 
 h5 {
-    font-family: "HarmonyOS_Sans", sans-serif;
+	font-family: "Minecraft_Sans", sans-serif;
     color: var(--txt-b-pure);
     font-size: 24px;
     text-align: center
@@ -209,7 +220,8 @@ h5 {
     transition: .25s
 }
 
-#footer{    
+#footer{
+	font-family: "Minecraft_Sans", sans-serif;
     width: 100%;
     height:100px;   /* footer的高度一定要是固定值*/ 
     position:absolute;
@@ -219,7 +231,7 @@ h5 {
 }
 
 #footer p{
-    font-family: "HarmonyOS_Sans", sans-serif;
+    font-family: "Minecraft_Sans", sans-serif;
     font-size: 5px;
     font-weight: 700;
     line-height: 10px;
@@ -227,7 +239,7 @@ h5 {
 }
 
 #footer a{
-    font-family: "HarmonyOS_Sans", sans-serif;
+    font-family: "Minecraft_Sans", sans-serif;
     position: relative;
     border-bottom: 1px solid transparent;
     color: black;
@@ -275,6 +287,7 @@ div ::-webkit-scrollbar-thumb:active {
 }
 
 ul {
+	font-family: "Minecraft_Sans", sans-serif;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -289,10 +302,12 @@ ul {
   }
   
   li {
+	font-family: "Minecraft_Sans", sans-serif;
     float: left;
   }
   
   li a {
+	font-family: "Minecraft_Sans", sans-serif;
     display: block;
     color: white;
     text-align: center;
@@ -320,6 +335,7 @@ ul {
   }
       
   .footer {
+	font-family: "Minecraft_Sans", sans-serif;
     position: relative;
     width: 100%;
     background: #3586ff;
@@ -347,7 +363,7 @@ ul {
   }
   
   .social-icon__link {
-    font-family: "HarmonyOS_Sans", sans-serif;
+    font-family: "Minecraft_Sans", sans-serif;
     font-size: 2rem;
     color: #fff;
     margin: 0 10px;
@@ -376,7 +392,7 @@ ul {
   .footer p {
     color: #fff;
     margin: 15px 0 10px 0;
-    font-family: "HarmonyOS_Sans", sans-serif;
+    font-family: "Minecraft_Sans", sans-serif;
     font-size: 1rem;
     font-weight: 300;
   }
