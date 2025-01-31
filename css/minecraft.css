@@ -404,7 +404,6 @@ li.right {
 	max-width: 1200px;
 	padding: 20px;
 	background-color: #fff;
-	border: 1px solid #ccc
 }
 
 .LeftBox,.RightBox {
@@ -417,12 +416,12 @@ li.right {
 
 .LeftBox {
 	position: relative;
-	text-align: left
+	text-align: center
 }
 
 .RightBox {
 	position: relative;
-	text-align: right
+	text-align: center
 }
 
 .github-icon {
