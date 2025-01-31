@@ -452,4 +452,27 @@ ul {
       background-positon-x: 0px;
     }
   }
+
+.Left_RightBox {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1200px; /* 可以根据需要调整最大宽度 */
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+.LeftBox, .RightBox {
+	padding: 20px;
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+  }
   
+  .LeftBox {
+	text-align: left;
+  }
+  
+  .RightBox {
+	text-align: right;
+  }
