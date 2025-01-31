@@ -1,10 +1,11 @@
 @font-face {
-	font-family: 'HarmonyOS_Sans';
-	src: url('/sans/HarmonyOS_Sans_SC_Medium.eot');
-	src: url('/sans/HarmonyOS_Sans_SC_Medium.eto') format('embedded-opentype'), 
-		 url('/sans/HarmonyOS_Sans_SC_Medium.woff') format('woff'), 
-		 url('/sans/HarmonyOS_Sans_SC_Medium.ttf') format('truetype'), 
-		 url('/sans/HarmonyOS_Sans_SC_Medium.svg') format('svg');
+	font-family: 'Minecraft_Sans';
+	src: url('/fonts/Minecraft_Sans_en&zh.eot'); /* 兼容旧版IE浏览器 */
+	src: url('/fonts/Minecraft_Sans_en&zh.eot') format('embedded-opentype'), /* 修复旧版IE浏览器 */
+		 url('/fonts/Minecraft_Sans_en&zh.woff2') format('woff2'), /* 最新的字体格式，优先加载 */
+		 url('/fonts/Minecraft_Sans_en&zh.woff') format('woff'), /* 兼容较旧浏览器 */
+		 url('/fonts/Minecraft_Sans_en&zh.ttf') format('truetype'), /* 兼容Mac OS X和Linux */
+		 url('/fonts/Minecraft_Sans_en&zh.svg#Minecraft_Sans') format('svg'); /* 兼容老版本的iOS */
 	font-weight: normal;
 	font-style: normal;
   }
@@ -21,8 +22,8 @@ html {
 }
 
 body {
-    font-family: "HarmonyOS_Sans", sans-serif;
-    background: no-repeat url("/wallpaper/MinecraftServer/wallpaper_minecraft_burberry_2560x1440.png");
+    font-family: "Minecraft_Sans", sans-serif;
+    background: no-repeat url("/wallpaper/MinecraftServer/wallpaper_minecraft_burberry_2560x1440.webp");
     /* background:url(http://47.111.254.61:8000/bingWp) no-repeat; */
     -webkit-background-size: cover;
     -o-background-size: cover;
