@@ -433,3 +433,16 @@ li.right {
 	height: 24px;
 	vertical-align: middle
 }
+.player{
+	width: 100%;
+	height: auto;
+	padding: 5px;
+	background-color: #262423;
+	border: 1px #6B6562;
+}
+
+.playerfaces{
+	width: 64px;
+	height: 64px;
+	float: left;
+}
