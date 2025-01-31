@@ -140,7 +140,7 @@ p {
 	margin-top: -30px;
 	width: 70px;
 	height: 4px;
-	background-color: #91b0b7
+	background-color: #2a641c
 }
 
 .underline,.underline1 {
@@ -164,7 +164,9 @@ h1,h2 {
 	font-weight: 400;
 	color: #e0d3bc
 }
-
+.title {
+	color: #3C8527
+}
 h2 {
 	font-size: 15px
 }
@@ -416,11 +418,13 @@ li.right {
 
 .LeftBox {
 	position: relative;
+	width: 50%;
 	text-align: center
 }
 
 .RightBox {
 	position: relative;
+	width: 50%;
 	text-align: center
 }
 
