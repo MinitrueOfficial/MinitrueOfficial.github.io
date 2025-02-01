@@ -166,6 +166,7 @@ h1,h2 {
 }
 .title {
 	color: #3C8527;
+	font-size: 80px;
 }
 h2 {
 	font-size: 15px
@@ -274,7 +275,6 @@ div ::-webkit-scrollbar-thumb:active {
 #toPirates {
 	display: none
 }
-
 ul {
 	list-style-type: none;
 	margin: 0;
