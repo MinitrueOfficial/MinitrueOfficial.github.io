@@ -23,7 +23,8 @@ body {
 	overflow-x: hidden;
 	cursor: default;
 	-webkit-tap-highlight-color: transparent;
-	user-select: none
+	user-select: none;
+	object-fit: cover;
 }
 
 #bodyBox,body {
@@ -137,10 +138,11 @@ p {
 
 .underline {
 	left: calc(50% - 35px);
-	margin-top: -30px;
+	margin: 5px;
 	width: 70px;
 	height: 4px;
-	background-color: #2a641c
+	/*background-color: #2a641c*/
+	background-color: #000
 }
 
 .underline,.underline1 {
@@ -165,17 +167,20 @@ h1,h2 {
 	color: #e0d3bc;
 }
 .title {
-	color: #3C8527;
-	font-size: 80px;
+	/*color: #3C8527;*/
+	color: #000;
+	font-size: 5vw;
 }
+.note {
+	font-size: 1vw;
+	/*color: #3C8527;*/
+	color: #000;
+}
+
 h2 {
 	font-size: 15px
 }
 
-.note {
-	font-size: 15px;
-	color: #3C8527;
-}
 
 h2 span {
 	color: hsla(0,0%,100%,.6)
@@ -285,7 +290,8 @@ ul {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
-	border-radius: 0 0 20px 20px
+	border-radius: 0 0 20px 20px;
+	z-index: 1000;
 }
 
 li {
@@ -465,4 +471,36 @@ li.right {
     .nickname {
         margin-top: 10px; /* 在昵称上方添加一些间距 */
     }
+}
+.popup {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	height: auto;
+	width: 300px;
+	background-color: #333;
+	color: white;
+	display: none; /* 初始状态隐藏 */
+	text-align: center;
+	backdrop-filter: blur(50px);
+}
+.popup p {
+	margin: 0;
+	font-size: 20px;
+	margin: 5px;
+}
+#ServerIpImg {
+	cursor: pointer;
+	border: 2px solid transparent;
+	transition: border-color 0.3s;
+	max-width: 100%;
+    height: auto;
+}
+#copyMessage {
+	font-size: 20px;
+	color: #4CAF50;
+	display: none;
+}
+.subtitles {
+	padding: 0px 5px 0 5px;
 }

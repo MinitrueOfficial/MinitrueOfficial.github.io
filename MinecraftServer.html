@@ -17,11 +17,10 @@
 	<li class="right"><a href="/history.html">历程</a></li>
 </ul>
 	<div id="topTitle">
-		<h1 class="title">Minecraft服务器</h1>
-
-		<span class="underline"></span>
-
+		<h1 class="title">Minecraft</h1>
+		<h1 class="title">服务器</h1>
 		<h2 class="note">/*这里是真理部|Minitrue官方服务器的主页*/</h2>
+		<span class="underline"></span>
 	</div>
 
 	<div id="about">
@@ -47,7 +46,7 @@
 		<div class="Left_RightBox">
 			<div class="LeftBox">
 				<h3>基岩版</h3>
-				<img src="/images/MinecraftServer/Servers‘Logo/LANDTRUE_3D_Transparent.webp" alt="LANDTRUE's logo">
+				<img src="/images/MinecraftServer/Servers‘Logo/LANDTRUE_3D_Transparent.webp" alt="LANDTRUE's logo" id="ServerIpImg">
 				<p>基岩版主要由WaiJade和DangerousHHZ建设，且开始较早</p>
             	<p>服务器曾使用过Aternos，exaroton，pixelcloud，阿里云服务器</p>
 				<h4>主要成员</h4>
@@ -62,7 +61,9 @@
 			</div>
 			<div class="RightBox">
 				<h3>Java版</h3>
-				<img src="/images/MinecraftServer/Servers‘Logo/WORLDTRUE_3D_Transparent.webp" alt="WORLDTRUE's logo">
+				<img src="/images/MinecraftServer/Servers‘Logo/WORLDTRUE_3D_Transparent.webp" alt="WORLDTRUE's logo" id="ServerIpImg" style="cursor: pointer;" title="点击复制服务器ip">
+   				<p id="ServerIpText" style="display: none;">e2-11.yxsjmc.cn:20015</p>
+				<div class="popup" id="popup"><p class="subtitles"><剪贴板: 已复制服务器ip></p></div>
           		<p>WorldTrue主要由真理部大多数人建设，但开始较晚</p>
 				<p>服务器主要通过GameWorld面板服托管</p>
 				<p>WorldTrue服务器使用Fabric加载器加载</p>
@@ -129,5 +130,26 @@
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+<script>
+const image = document.getElementById('ServerIpImg');
+        const textToCopy = document.getElementById('ServerIpText').textContent;
+        const popup = document.getElementById('popup');
 
+        // 添加点击事件
+        image.addEventListener('click', () => {
+            // 使用Clipboard API复制文本
+            navigator.clipboard.writeText(textToCopy)
+                .then(() => {
+                    // 显示弹窗
+                    popup.style.display = 'block';
+                    // 3秒后隐藏弹窗
+                    setTimeout(() => {
+                        popup.style.display = 'none';
+                    }, 3000);
+                })
+                .catch(err => {
+                    console.error('复制失败:', err);
+                });
+        });
+</script>
 </html>
