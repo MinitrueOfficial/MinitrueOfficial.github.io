@@ -69,10 +69,8 @@
 				<p>WorldTrue服务器使用Fabric加载器加载</p>
 				<p>通过Geyser（间歇泉）插件使Java版和基岩版互通</p>
             	<p>成员中名字前方带点为通过基岩版参与WorldTrue建设者</p>
-				<p>服务器加装了Dnymap和Squaremap模组</p>
-				<p>可通过网页<del>视奸</del>观看世界和服务器游玩玩家</p>
-				<p><a href="http://e2-11.yxsjmc.cn:20002/"target="_blank"color="#3C8527">Squaremap地图在线</a>对外开放</p>
-				<p><a href="http://e2-11.yxsjmc.cn:20001/"target="_blank">Dnymap地图在线</a>则仅对内开放</p>
+				<p>服务器加装了Dnymap模组</p>
+				<p>可通过<a href="http://e2-11.yxsjmc.cn:20001/"target="_blank">网页<del>视奸</del>观看世界和服务器游玩玩家</a></p>
 				<h4>主要成员</h4>
 					<div class="player">
 						<img  class="playerfaces" src="/images/MinecraftServer/PlayerFaces/DangerousHHZ.webp" alt="DangerousHHZ's avatar">
@@ -102,10 +100,17 @@
 						<img  class="playerfaces" src="/images/MinecraftServer/PlayerFaces/#" alt=".HHZ9052322's avatar">
 						<span class="nickname">.HHZ9052322</span>
 					</div>
+					<h4>在线成员</h4>
+					<div id="PlayerList">加载中……</div>
+					<h4>地图预览</h4>
+					<iframe src="http://e2-11.yxsjmc.cn:20001/" style="width: 100%; aspect-ratio: 1 / 1; border: none;"></iframe>
+					<p>你可以暂时通过上方地图预览查看信息和与服务器聊天</p>
+					<p>进一步的直接通过网站自定义的元素查看信息和聊天在更新</p>
 			</div>
 		</div>
     </div>        
 	</div>
+	
 	<footer class="footer">
 		<div class="waves">
 			<div class="wave" id="wave1">
@@ -152,4 +157,27 @@ const image = document.getElementById('ServerIpImg');
                 });
         });
 </script>
+<script>
+const targetUrl = 'http://e2-11.yxsjmc.cn:20001/'; // 目标网站的 URL
+const proxyUrl = `https://request.waijade.workers.dev/`;
+
+fetch(proxyUrl)
+  .then(response => response.text())
+  .then(html => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const ulElements = doc.querySelectorAll('ul.list.content.playerlist li');
+    let output = '';
+    ulElements.forEach(li => {
+      const playerName = li.querySelector('a').innerText;
+      const playerIcon = li.querySelector('img').getAttribute('src');
+      output += `<div><img src="${playerIcon}" alt="${playerName}"> ${playerName}</div>`;
+    });
+    document.getElementById('PlayerList').innerHTML = output;
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    document.getElementById('PlayerList').innerText = 'Failed to load data.';
+  });
+	</script>
 </html>

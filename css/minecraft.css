@@ -504,3 +504,11 @@ li.right {
 .subtitles {
 	padding: 0px 5px 0 5px;
 }
+.PlayerList {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	width: 100%;
+	padding: 20px;
+	background-color: #fff;
+}
