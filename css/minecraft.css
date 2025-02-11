@@ -280,7 +280,7 @@ div ::-webkit-scrollbar-thumb:active {
 #toPirates {
 	display: none
 }
-.ul {
+ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -294,11 +294,11 @@ div ::-webkit-scrollbar-thumb:active {
 	z-index: 1000;
 }
 
-.li {
+li {
 	float: left
 }
 
-.li a {
+li a {
 	display: block;
 	color: #fff;
 	text-align: center;
@@ -307,7 +307,7 @@ div ::-webkit-scrollbar-thumb:active {
 	border-radius: 20px
 }
 
-.li a:hover {
+li a:hover {
 	background-color: #839ba5
 }
 
@@ -316,7 +316,7 @@ div ::-webkit-scrollbar-thumb:active {
 	border-radius: 20px
 }
 
-.li.right {
+li.right {
 	float: right
 }
 
