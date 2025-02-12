@@ -12,11 +12,14 @@ html {
 }
 
 body {
-	background: no-repeat url(/wallpaper/MinecraftServer/AllMembers.webp);
+	background:url(/wallpaper/MinecraftServer/AllMembers.webp);
 	-webkit-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	background-attachment: fixed;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 	height: 100%;
 	max-width: 100%;
 	margin: 0;
@@ -26,7 +29,11 @@ body {
 	user-select: none;
 	object-fit: cover;
 }
-
+@media (max-width: 600px) {
+	body {
+	  background-image: url('/wallpaper/MinecraftServer/AllMembers_Phone.webp');
+	}
+  }
 #bodyBox,body {
 	font-family: Minecraft_Sans,sans-serif;
 	width: 100%
@@ -170,11 +177,14 @@ h1,h2 {
 	/*color: #3C8527;*/
 	color: #000;
 	font-size: 5vw;
+	font-weight: 400;
+	font-size: 80px;
 }
 .note {
-	font-size: 1vw;
+	font-size: 15px;
 	/*color: #3C8527;*/
 	color: #000;
+	font-weight: 400;
 }
 
 h2 {
@@ -223,7 +233,10 @@ h5 {
 	left: 0;
 	background: wheat
 }
-
+.footerFix {
+	position:absolute;
+	padding-top: 80px;
+}
 #footer,#footer p {
 }
 
@@ -524,6 +537,7 @@ li.right {
 	overflow: hidden;
 	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin: auto;
 }
 
 .carousel-inner {
