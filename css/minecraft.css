@@ -608,3 +608,62 @@ li.right {
 .carousel-indicator.active {
 	background: #333;
 }
+#journey {
+position: relative;
+top: 100%;
+width: 100%;
+padding-top: 80px;
+padding-bottom: 100px;
+font-size: 0;
+text-align: center;
+transition: .25s;
+background-color: var(--bg-w-pure);
+}
+.heading-underline-1 {
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: var(--theme-color);
+}
+.journey-container-wrapper {
+    position: relative;
+    left: 15%;
+    margin-top: 30px;
+    width: 70%;
+    overflow: hidden;
+}
+@media screen and (max-width: 1300px) {
+    .journey-container-wrapper {
+        left: 10%;
+        width: 80%;
+    }
+}
+#journey-container {
+    display: flex
+;
+    padding: 0 80px 10px 80px;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.journey-mask.left {
+    left: 0;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), var(--bg-w-pure));
+}
+.journey-mask {
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    pointer-events: none;
+}
+.journey-item-date {
+    margin-bottom: 3px;
+    color: var(--txt-b-pure);
+}.journey-item-date, .journey-item-fade-out {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
