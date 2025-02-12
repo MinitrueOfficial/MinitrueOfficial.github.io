@@ -148,8 +148,8 @@ p {
 	margin: 5px;
 	width: 70px;
 	height: 4px;
-	/*background-color: #2a641c*/
-	background-color: #000
+	background-color: #2a641c
+	/*background-color: #000*/
 }
 
 .underline,.underline1 {
@@ -174,16 +174,16 @@ h1,h2 {
 	color: #e0d3bc;
 }
 .title {
-	/*color: #3C8527;*/
-	color: #000;
+	color: #3C8527;
+	/*color: #000;*/
 	font-size: 5vw;
 	font-weight: 400;
 	font-size: 80px;
 }
 .note {
 	font-size: 15px;
-	/*color: #3C8527;*/
-	color: #000;
+	color: #3C8527;
+	/*color: #000;*/
 	font-weight: 400;
 }
 
