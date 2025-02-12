@@ -12,7 +12,7 @@ html {
 }
 
 body {
-	background: no-repeat url(/wallpaper/MinecraftServer/wallpaper_minecraft_burberry_2560x1440.webp);
+	background: no-repeat url(/wallpaper/MinecraftServer/AllMembers.webp);
 	-webkit-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
@@ -330,7 +330,7 @@ li.right {
 	width: 100%;
 	background: #3586ff;
 	min-height: 100px;
-	padding: 20px 50px;
+	/*padding: 20px 50px;*/
 	flex-direction: column
 }
 
@@ -533,7 +533,7 @@ li.right {
 
 .carousel-item {
 	min-width: 100%;
-	flex: 0 0 auto;
+	flex: 0 auto;
 	opacity: 0.7;
 	transition: opacity 0.5s ease;
 }
