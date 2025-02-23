@@ -674,3 +674,18 @@ background-color: var(--bg-w-pure);
 	border: 1px solid #ddd;
 	padding: 10px;
 }
+.SignDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 5px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--b-alpha-5);
+    text-align: left;
+}
+.journey-item-content {
+    margin: 0;
+    color: var(--b-alpha-80);
+    font-size: 14px;
+}
