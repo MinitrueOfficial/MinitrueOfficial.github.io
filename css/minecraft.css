@@ -266,7 +266,7 @@ h5 {
 }
 
 div ::-webkit-scrollbar {
-	width: 5px
+	width: 10px
 }
 
 div ::-webkit-scrollbar-thumb {
@@ -640,13 +640,26 @@ background-color: var(--bg-w-pure);
     }
 }
 #journey-container {
-    display: flex
-;
+    display: flex;
     padding: 0 80px 10px 80px;
+	
     white-space: nowrap;
     overflow-y: hidden;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+}
+#journey-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+    border-radius: 10px; /
+}
+
+#journey-container::-webkit-scrollbar-thumb {
+    background-color: #4CAF50; 
+    border-radius: 10px; 
+}
+
+#journey-container::-webkit-scrollbar-thumb:hover {
+    background-color:#2a641c; 
 }
 .journey-mask.left {
     left: 0;
@@ -680,12 +693,13 @@ background-color: var(--bg-w-pure);
     justify-content: center;
     margin: 0 5px;
     padding: 10px 20px;
-    border-radius: 10px;
-    background-color: var(--b-alpha-5);
+    border-radius: 5px;
+    /*background-color: #000000;*/
     text-align: left;
+	background:url(/images/MinecraftServer/Signs/cherry.png);
 }
 .journey-item-content {
     margin: 0;
-    color: var(--b-alpha-80);
+    color: #000000;
     font-size: 14px;
 }
